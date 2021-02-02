@@ -6,5 +6,5 @@ mysqldump --compatible=postgresql --default-character-set=utf8 --skip-lock-table
 converter data:
 python db_converter.py databasename.mysql databasename.psql schema
 
-load data
+load data:
 psql -f databasename.psql
